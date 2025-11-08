@@ -1,73 +1,47 @@
-# React + TypeScript + Vite
+# 🥋 C.T ARENA — Krav Maga
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo à **C.T Arena**, um projeto dedicado ao **Krav Maga**, a arte israelense de defesa pessoal que une **técnica, foco e sobrevivência**.  
+Aqui é o espaço onde corpo e mente se tornam armas — e a disciplina se transforma em força.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 Sobre o Projeto
 
-## React Compiler
+O **C.T Arena** é um ambiente digital criado para **divulgar, ensinar e inspirar praticantes de Krav Maga**.  
+O objetivo é mostrar o poder da **autodefesa consciente**, com base em princípios reais de **segurança, reação e controle emocional**.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 💪 O que você encontra aqui
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 📖 Conteúdo sobre técnicas e fundamentos do Krav Maga  
+- 🧍‍♂️ Explicações sobre postura, equilíbrio e defesa  
+- ⚔️ Galeria de treinamentos e vídeos (em breve)  
+- 🎯 Área de benefícios físicos e mentais  
+- 🧩 Seção sobre filosofia e história da arte  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tecnologias Utilizadas
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Categoria | Ferramentas |
+|------------|-------------|
+| 💻 Front-end | HTML, CSS, React |
+| 🎨 Estilização | TailwindCSS |
+| 🧠 Conceito | Krav Maga, Defesa Pessoal, Condicionamento Mental |
+| 🗂️ Controle de versão | Git & GitHub |
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📂 Estrutura do Projeto
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+C.T-Arena/
+├── src/
+│   ├── components/    # Componentes reutilizáveis (benefícios, técnicas, etc)
+│   ├── pages/         # Páginas do site
+│   ├── assets/        # Imagens, ícones e vídeos
+│   └── App.js         # Arquivo principal
+├── public/
+│   └── index.html
+└── README.md
