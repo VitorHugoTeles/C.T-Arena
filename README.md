@@ -1,47 +1,31 @@
-# 🥋 C.T ARENA — Krav Maga
+# 🥋 C.T ARENA INHKV — Site Oficial
 
-Bem-vindo à **C.T Arena**, um projeto dedicado ao **Krav Maga**, a arte israelense de defesa pessoal que une **técnica, foco e sobrevivência**.  
-Aqui é o espaço onde corpo e mente se tornam armas — e a disciplina se transforma em força.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![CSS3](https://img.shields.io/badge/CSS3-264de4?style=for-the-badge&logo=css3&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=yellow)
+![License](https://img.shields.io/badge/license-Proprietária-red?style=for-the-badge)
 
----
-
-## 🧠 Sobre o Projeto
-
-O **C.T Arena** é um ambiente digital criado para **divulgar, ensinar e inspirar praticantes de Krav Maga**.  
-O objetivo é mostrar o poder da **autodefesa consciente**, com base em princípios reais de **segurança, reação e controle emocional**.
+> Um site moderno, rápido e responsivo criado para o **C.T Arena INHKV (Instituto Nacional Hanaga Krav Maga)**.  
+> Desenvolvido com **React + Vite**, apresenta aulas, benefícios e contato direto pelo **WhatsApp**.
 
 ---
 
-## 💪 O que você encontra aqui
+## 🌐 Demonstração
 
-- 📖 Conteúdo sobre técnicas e fundamentos do Krav Maga  
-- 🧍‍♂️ Explicações sobre postura, equilíbrio e defesa  
-- ⚔️ Galeria de treinamentos e vídeos (em breve)  
-- 🎯 Área de benefícios físicos e mentais  
-- 🧩 Seção sobre filosofia e história da arte  
+🖥️ **Acesse online (caso publicado):** [https://ct-arena-inhkv.vercel.app](#)  
+📱 Totalmente responsivo — funciona em qualquer dispositivo!
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
-| Categoria | Ferramentas |
-|------------|-------------|
-| 💻 Front-end | HTML, CSS, React |
-| 🎨 Estilização | TailwindCSS |
-| 🧠 Conceito | Krav Maga, Defesa Pessoal, Condicionamento Mental |
-| 🗂️ Controle de versão | Git & GitHub |
+- ⚛️ **React.js** → estrutura principal do site  
+- ⚡ **Vite** → ambiente de desenvolvimento rápido  
+- 🎨 **CSS3** → estilização customizada com tema escuro  
+- 🧭 **HTML5** → base da estrutura  
+- 💬 **WhatsApp API** → integração para contato direto  
 
 ---
 
-## 📂 Estrutura do Projeto
+## 🗂️ Estrutura do Projeto
 
-```bash
-C.T-Arena/
-├── src/
-│   ├── components/    # Componentes reutilizáveis (benefícios, técnicas, etc)
-│   ├── pages/         # Páginas do site
-│   ├── assets/        # Imagens, ícones e vídeos
-│   └── App.js         # Arquivo principal
-├── public/
-│   └── index.html
-└── README.md
