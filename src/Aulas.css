@@ -1,0 +1,103 @@
+    /* ===== Seção principal ===== */
+.aulas-container {
+  max-width: 900px;
+  width: 90%;
+  margin: 80px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Título geral da seção ===== */
+.aulas-header {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ff4c4c; /* tom marcial */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(255, 76, 76, 0.4);
+}
+
+/* ===== Cards individuais ===== */
+.aula-card {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: left;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.aula-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(255, 76, 76, 0.3);
+  border-color: rgba(255, 76, 76, 0.6);
+}
+
+/* ===== Título da aula ===== */
+.aula-titulo {
+  font-size: 1.4rem;
+  color: #ff4c4c;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* ===== Horário ===== */
+.aula-horario {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 6px;
+}
+
+/* ===== Descrição ===== */
+.aula-descricao {
+  font-size: 0.95rem;
+  color: #aaa;
+  line-height: 1.5;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 600px) {
+  .aulas-container {
+    padding: 25px;
+  }
+
+  .aula-card {
+    padding: 20px;
+  }
+
+  .aula-titulo {
+    font-size: 1.2rem;
+  }
+}
+.aula-botao {
+  all: unset;
+  display: block;
+  width: 100%;
+  background: none !important;
+  background-color: transparent !important;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 10px;
+  text-align: left;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: none !important;
+}
+
+
+.aula-botao:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* leve destaque ao passar o mouse */
+}

@@ -1,0 +1,77 @@
+/* ===== Seção de Benefícios ===== */
+.beneficios-container {
+  max-width: 900px;
+  width: 90%;
+  margin: 80px auto;
+  text-align: center;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Título da seção ===== */
+.beneficios-header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff4c4c;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(255, 76, 76, 0.4);
+}
+
+/* ===== Lista de benefícios ===== */
+.beneficios-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ===== Cartões individuais ===== */
+.beneficio-card {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px 15px;
+  font-size: 1.1rem;
+  color: #ccc;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.beneficio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(255, 76, 76, 0.3);
+  border-color: rgba(255, 76, 76, 0.6);
+  color: #fff;
+}
+
+/* ===== Ícones opcionais ===== */
+.beneficio-icon {
+  font-size: 1.8rem;
+  color: #ff4c4c;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 600px) {
+  .beneficios-container {
+    padding: 25px;
+  }
+
+  .beneficio-card {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .beneficios-header {
+    font-size: 1.6rem;
+  }
+}
