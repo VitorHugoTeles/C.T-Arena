@@ -1,0 +1,42 @@
+/* ===== Capa estilo Facebook ===== */
+.capa-container {
+  position: relative;
+  width: 100%;
+  height: 350px; /* altura fixa da capa */
+  background: url('src/assests/imagem de fundo.png') center/cover no-repeat; /* insere como fundo */
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ===== Foto de perfil ===== */
+.foto-perfil {
+  position: absolute;
+  bottom: 0px; /* faz a foto “invadir” o fundo */
+  left: 10%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+}
+
+/* ===== Nome ou bio do professor ===== */
+.bio-container {
+  margin-top: 100px; /* dá espaço depois da foto */
+  text-align: center;
+  color: white;
+}
+
+.bio-container h2 {
+  font-size: 1.8rem;
+  color: #ff4c4c;
+  margin-bottom: 8px;
+}
+
+.bio-container p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.5;
+}

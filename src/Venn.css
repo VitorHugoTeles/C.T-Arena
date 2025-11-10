@@ -1,0 +1,51 @@
+.desenvolvemos {
+    display: flex;
+    justify-content: space-between; /* separa os dois lados */
+    align-items: center; /* alinha verticalmente */
+    gap: 40px; /* espaço entre o texto e o diagrama */
+}
+
+.desenvolvemos p {
+    max-width: 400px; /* limita largura do texto */
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #fdfdfd;
+}
+
+.venn {
+    position: relative;
+    width: 350px;
+    height: 250px;
+}
+
+.metodologia, .teorica, .pratica {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    mix-blend-mode: multiply;
+    position: absolute;
+}
+
+/* cores e posições */
+.metodologia {
+    background-color: rgba(255, 0, 0, 0.6);
+    left: 100px;
+    top: -20px;
+}
+
+.teorica {
+    background-color: rgba(0, 0, 255, 0.6);
+    left: 50px;
+    top: 60px;
+}
+
+.pratica {
+    background-color: rgba(0, 255, 0, 0.6);
+    left: 150px;
+    top: 60px;
+}

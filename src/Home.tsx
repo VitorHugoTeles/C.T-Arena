@@ -2,6 +2,8 @@ import './Home.css'
 import './Aulas.css'
 import './benefios.css'
 import './Footer.css'
+import './Regras.css'
+import './Venn.css'
 
 export function Home() {
   return (
@@ -17,19 +19,28 @@ export function Home() {
       </header>
 
       <div className="home-content">
-        <h3>Defenda-se, Fortaleça-se, Transforme-se com o Krav Maga</h3>
-        <button onClick={() => window.open("https://wa.me/554499271050", "_blank")}> Marca uma aula experimental de graça apertando aqui totalmente de graça</button>
-        <h2>Sobre Nós</h2>
-        <p>
-          A gente é um centro de treinamento a onde ensinamos Krav Maga, mas não apenas isto e sim carater, diciplina e conduta, somos bastante rigorosos com isso.
-        </p>
+        <button onClick={() => window.open("https://wa.me/554499271050", "_blank")}> Marca uma aula experimental de graça apertando aqui</button>
+        <h2>Desenvolvemos:</h2>
+        <div className='desenvolvemos'>
+          <p className='explicacao'>
+          Aprendizado prático dos conceitos de auto defesa, levando o praticante a ser capaz de se observar e fortalecer sua mente para então ser capaz de controlar situações de crise (internas ou externas).
+          </p>
+          <div className='venn'>
+          <div className='metodologia'>Metodologia ditadica</div>
+          <div className='teorica'>Teorica</div>
+          <div className='pratica'>Pratica</div>
+        </div>
+        </div>
 
-        <Aulas/>
-        
-        <Beneficios/>
-
+        <h3 className='lema'>Nosso lema: Você pode fazer melhor</h3>
+        <div className='main-sections'>
+          <Aulas/> 
+          <Beneficios/>
+          <Regras/>
+        </div>
+      </div>
+      <div>
         <Footer/>
-
       </div>
     </>
   );
@@ -72,11 +83,11 @@ export function Beneficios() {
   return (
     <div className="beneficios-container">
       <h2 className="beneficios-header">Benefícios</h2>
-      <ul className="beneficios-lista">
-        <li className="beneficio-card">Auto confiança</li>
-        <li className="beneficio-card">Preparo físico</li>
-        <li className="beneficio-card">Defesa pessoal</li>
-        <li className="beneficio-card">Foco mental</li>
+      <ul className="beneficios-card">
+        <li>Auto confiança</li>
+        <li>Preparo físico</li>
+        <li>Defesa pessoal</li>
+        <li>Foco mental</li>
       </ul>
     </div>
   );
@@ -87,7 +98,7 @@ export function Footer() {
   return (
     <footer>
       <p className="footer-text">
-        Site desenvolvido por <span className="footer-creators">Vitor Hugo Teles❤️</span> e equipe do C.T Arena INHKV
+        Site desenvolvido por <span className="footer-creators">Vitor Hugo Teles❤️</span> e equipe do C.T Arena IHKV
       </p>
 
       <div className="footer-links">
@@ -105,6 +116,23 @@ export function Endereço(){
   return (
     <div>
       <p><a href="https://www.google.com/maps/place/R.+Marins+C+Pereira,+433+-+Jardim+Horizonte,+Campo+Mour%C3%A3o+-+PR,+87303-029/@-24.02992,-52.3837808,17z/data=!3m1!4b1!4m6!3m5!1s0x94ed7521b53fee1b:0x5f192544a624ec1e!8m2!3d-24.0299249!4d-52.3812059!16s%2Fg%2F11y64x78b6?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D"></a>Rua Marins C. Pereira 433</p>
+    </div>
+  )
+}
+
+export function Regras(){
+  return (
+    <div className='Regras-container'>
+      <h2 className='Regras-header'> As regas do C.T</h2>
+      <ul className='Regras-card'>
+        <li>Diciplina</li>
+        <li>Respeito</li>
+        <li>Cumprimentar o tatame ao entrar e sair</li>
+        <li>Não se envolver em brigas desnecessárias</li>
+        <li>Não fazer ou aceitar desafios em nome do C.T</li>
+        <li>Não falar palavrão <strong>(multa de $05,00 e 15 flexão)</strong></li>
+        <li>Proibido falar <strong>"Não consigo"</strong> sujeito a pagar 10 flexão</li>
+      </ul>
     </div>
   )
 }

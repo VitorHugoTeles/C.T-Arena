@@ -1,5 +1,4 @@
-/* ===== Seção de Benefícios ===== */
-.beneficios-container {
+.Regras-container {
   max-width: 900px;
   width: 90%;
   margin: 80px auto;
@@ -12,7 +11,7 @@
 }
 
 /* ===== Título da seção ===== */
-.beneficios-header {
+.Regras-header {
   font-size: 2rem;
   font-weight: bold;
   color: #ff4c4c;
@@ -22,8 +21,7 @@
   text-shadow: 0 0 10px rgba(255, 76, 76, 0.4);
 }
 
-/* ===== Cartões individuais ===== */
-.beneficios-card {
+.Regras-card {
   width: 100%;
   background: rgba(0, 0, 0, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.1);
