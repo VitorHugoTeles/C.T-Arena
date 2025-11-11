@@ -1,0 +1,61 @@
+.preco-container {
+  max-width: 900px;
+  width: 90%;
+  margin: 80px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+.preco-header {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ff4c4c; 
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(255, 76, 76, 0.4);
+
+}
+
+
+.preco-card {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.preco-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(255, 76, 76, 0.3);
+  border-color: rgba(255, 76, 76, 0.6);
+}
+
+.preco-titulo {
+  font-size: 1.4rem;
+  color: #ff4c4c;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.preco-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+
+  width: 100%;
+}

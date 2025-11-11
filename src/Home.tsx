@@ -4,12 +4,13 @@ import './benefios.css'
 import './Footer.css'
 import './Regras.css'
 import './Venn.css'
+import './preco.css'
 
 export function Home() {
   return (
     <>
       <header>
-        <h2> C.T Arena INHKV  (Instituto Nacional Hanaga Krav Maga)</h2>
+        <h2> C.T Arena IHKM  (Instituto Hanaga Krav Maga)</h2>
         <nav>
           <a href="#">Home</a>
           <a href="#">Sobre</a>
@@ -19,7 +20,7 @@ export function Home() {
       </header>
 
       <div className="home-content">
-        <button onClick={() => window.open("https://wa.me/554499271050", "_blank")}> Marca uma aula experimental de graça apertando aqui</button>
+
         <h2>Desenvolvemos:</h2>
         <div className='desenvolvemos'>
           <p className='explicacao'>
@@ -34,9 +35,10 @@ export function Home() {
 
         <h3 className='lema'>Nosso lema: Você pode fazer melhor</h3>
         <div className='main-sections'>
-          <Aulas/> 
-          <Beneficios/>
           <Regras/>
+          <Aulas/> 
+          <Preco/>
+          <Beneficios/>
         </div>
       </div>
       <div>
@@ -60,7 +62,7 @@ export function Aulas() {
 
             <div className="aula-card">
         <button className='aula-botao' onClick={() => window.open("https://www.google.com/maps/place/R.+Marins+C+Pereira,+433+-+Jardim+Horizonte,+Campo+Mour%C3%A3o+-+PR,+87303-029/@-24.02992,-52.3837808,17z/data=!3m1!4b1!4m6!3m5!1s0x94ed7521b53fee1b:0x5f192544a624ec1e!8m2!3d-24.0299249!4d-52.3812059!16s%252Fg%252F11y64x78b6?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQ", "_blank")}>
-        <strong className="aula-titulo">Endereço::</strong>
+        <strong className="aula-titulo">Endereço:</strong>
         <p className="aula-descricao">Rua Marins C. Pereira 433 </p>
         </button>
       </div>
@@ -75,6 +77,7 @@ export function Aulas() {
         <strong className="aula-titulo">Turma Geral:</strong>
         <p className="aula-descricao">Segunda a sexta das 19:30 às 20:30, e sábado das 09:00 às 10:30.</p>
       </div>
+      <button onClick={() => window.open("https://wa.me/554499271050", "_blank")}> Marca uma aula experimental de graça apertando aqui</button>
     </div>
   );
 }
@@ -133,6 +136,28 @@ export function Regras(){
         <li>Não falar palavrão <strong>(multa de $05,00 e 15 flexão)</strong></li>
         <li>Proibido falar <strong>"Não consigo"</strong> sujeito a pagar 10 flexão</li>
       </ul>
+    </div>
+  )
+}
+
+export function Preco(){
+  return (
+    <div className='preco-container'>
+      <h2 className='preco-header'>tabela de Preços</h2>
+      <div className='preco-cards'>
+      <div className='preco-card'>
+      <h2 className='preco-titulo'>Plano de 3 aulas na semana.</h2>
+      <p className='preco-descriçao'>R$130,00</p>
+      </div>
+      <div className='preco-card'>
+      <h2 className='preco-titulo'>Plano de ir toda semana</h2>
+      <p className='preco-descriçao'>R$160,00</p>
+      </div>
+      <div className='preco-card'>
+      <h2 className='preco-titulo'>Plano por ano </h2>
+      <p className='preco-descriçao'>R$200,00</p>
+      </div>
+      </div>
     </div>
   )
 }
